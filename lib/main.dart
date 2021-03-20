@@ -17,7 +17,7 @@ class _SagarState extends State<Sagar> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.blue,
         appBar: AppBar(
           title: Center(
             child: Text(

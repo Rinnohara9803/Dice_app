@@ -34,8 +34,9 @@ class _SagarState extends State<Sagar> {
               Text(
                 "You've got 2 Chance.",
                 style: TextStyle(
-                  fontStyle: FontStyle.italic,
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'Ranchers',
+                  color: Colors.black54,
                   fontSize: 40.0,
                 ),
               ),
@@ -79,6 +80,9 @@ class _SagarState extends State<Sagar> {
                     ),
                   ],
                 ),
+              ),
+              Container(
+                child: Text(''),
               ),
             ],
           ),

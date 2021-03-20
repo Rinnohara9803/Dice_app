@@ -32,7 +32,7 @@ class _SagarState extends State<Sagar> {
           child: Column(
             children: [
               Text(
-                "You've got 2 Chance.",
+                "You've got 3 Chance.",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Ranchers',

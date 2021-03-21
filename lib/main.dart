@@ -13,6 +13,12 @@ class Sagar extends StatefulWidget {
 class _SagarState extends State<Sagar> {
   int leftDiceNumber = 1;
   int rightDiceNumber = 1;
+
+  void getRandom() {
+    leftDiceNumber = Random().nextInt(6) + 1;
+    rightDiceNumber = Random().nextInt(6) + 1;
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -53,8 +59,7 @@ class _SagarState extends State<Sagar> {
                         child: FlatButton(
                           onPressed: () {
                             setState(() {
-                              Random random = new Random();
-                              leftDiceNumber = random.nextInt(6) + 1;
+                              getRandom();
                               print('left button pressed.');
                             });
                           },
@@ -69,8 +74,7 @@ class _SagarState extends State<Sagar> {
                         child: FlatButton(
                           onPressed: () {
                             setState(() {
-                              Random random = new Random();
-                              rightDiceNumber = random.nextInt(6) + 1;
+                              getRandom();
                               print('right button pressed.');
                             });
                           },
